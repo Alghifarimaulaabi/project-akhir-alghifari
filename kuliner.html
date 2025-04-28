@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#support-section">Support</a></li>
+                            <li><a href="#kontak">Contact</a></li>
+                            <li><a href="javascript:history.back()" class="btn btn-back">Kembali</a></li> 
+                        </ul>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#support-section">Support</a></li>
+                <li><a href="#kontak">Contact</a></li>
+</ul>
+        </div>
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    </nav>
+    <br>
+
+    <div class="culinary">
+        <div class="slide">
+            <div class="item" style="background-image: url(gambar/ayam\ \ bambu\ wink.jpg);">
+                <div class="content">
+                    <div class="name">Ayam Bambu</div>
+                    <div class="des">ayam bambu hidangan yang terbuat dari ayam yang dimasak dalam bambu bersama rempah rempah</div>
+                    <button class="tmbl"><a href="ayambambu.html">Lihat Detail</a></button>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(gambar/kaledp\ wink.jpg);">
+                <div class="content">
+                    <div class="name">Kaledo</div>
+                    <div class="des">kaki lembung makanan khas sulawesi tengah donggala</div>
+                    <a href="kaledo.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(gambar/lalampa\ wink.jpg);">
+                <div class="content">
+                    <div class="name">Lalampa</div>
+                    <div class="des">ayam bambu hidangan yang terbuat dari ayam yang dimasak dalam bambu bersama rempah rempah</div>
+                    <a href="lalampa.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(gambar/uta\ dada\ wink.jpg);">
+                <div class="content">
+                    <div class="name">Uta Dada</div>
+                    <div class="des">hidangan khas masyarakat kaili sulawesi tengah yang terbuat dari ayam kampung atau ikan cakalang asap yang dimasak dalam kiah santan</div>
+                    <a href="utadada.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(gambar/milu\ siram.jpg);">
+                <div class="content">
+                    <div class="name">Milu Siram</div>
+                    <div class="des">makanan yang memiliki jenis buah serta berbahan dasar berupa jagung dan menjadi salah datu khas makanan di sulawesi tengah</div>
+                    <a href="milusiram.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(gambar/sambal\ roa.jpg);">
+                <div class="content">
+                    <div class="name">Sambal Roa</div>
+                    <div class="des">Sambal khas manado yang terbuat dari ikan roa asap,cabai,dan bumbu bumbu lain</div>
+                    <a href="sambal.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+            </div>
+ 
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    
+      
+        
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+</body>
+
+
+
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+</style>
+<body style="background-color: gray;">
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#support-section">Support</a></li>
+                            <li><a href="#kontak">Contact</a></li>
+                        </ul>
+            </div>
+        </div> 
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">Aboutus</a></li>
+                <li><a href="galery.html">Galery</a></li>
+                <li><a href="destinasi.html">Popular</a></li>
+                <li><a href="culture.html">Budaya</a></li>
+                <li><a href="map.html">Geography</a></li>
+                <li><a href="kuliner.html">Culinary</a></li>
+                <li><a href="penginapan.html">penginapan</a></li>
+                <li><a href="blog.html">Blog</a></li>
+</ul>
+        </div>
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+    </nav>
+    <br> <br>
+
+    <section class="abuabu" id="blog">
+        <div class="layar-dalam">
+            <h3 style="margin-top: 30px; color: #fff;">Laastest Blog</h3>
+            <p class="ringkasan">
+                catatan mengenai tempat tampat wisata di sulawesi tengah
+            </p>
+            <div class="blog">
+                <div class="area">
+                    <div
+                     class="gambar" style="background-image: url('gambar/Situs\ Megalitikum\ Taman\ Nasional\ Lore\ Lindu\,\ Sulawesi\ Tengah.jpg');">
+                    </div>
+                    <div class="text">
+                        <article>
+                            <h4><a href="popular2.html">Bagaimana dengan Lore Lindu?</a></h4>
+                            <p>Taman Nasional Lore Lindu, kawasan konservasi terbesar di Sulawesi Tengah, kaya akan keanekaragaman hayati langka dan situs megalitikum bersejarah di Lembah Napu dan Bada.</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="area">
+                    <div
+                     class="gambar" style="background-image: url('gambar/📍menara\ nosarara\ nosabatutu\,\ middle\ sulawesi….jpg');">
+                    </div>
+                    <div class="text">
+                        <article>
+                            <h4><a href="popular3.html">Bagaimana Dengan Menara Nosarara?</a></h4>
+                            <p>Menara Nosarara Nosabatutu di Kota Palu adalah simbol perdamaian dan persaudaraan, dengan Gong Perdamaian Nusantara dan pemandangan indah.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+</body>
+
+
+
+</html>
+

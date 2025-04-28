@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="bestdestinasi.css">
+  <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+    <!-- layar dalam -->
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+
+
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="#support-section">Support</a></li>
+                            <li><a href="#footer">Contact</a></li>
+                        </ul>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+                <ul>
+                    <li><a href="menu.html"><i class="fa-solid fa-house">Home</i></a></li>
+                    <li><a href="aboutus.html"><i class="fa-solid fa-people-group">Aboutus</i></a></li>
+                    <li><a href="destinasi.html"><i class="fa-solid fa-star">Popular</i></a></li>
+                    <li><a href="map.html"><i class="fa-solid fa-map">Geography</i></a></li>
+                    <li><a href="kuliner.html">Culinary</a></li>
+                    <li><a href="penginapan.html">Penginapan</a></li>
+                    <li><a href="culture.html">Budaya</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="galery.html">Gallery</a></li>
+                    <li><a href="#support-section">Support</a></li>
+                    <li><a href="#kontak">Contact</a></li>
+                </ul>
+            </div>
+            <button class="open-btn" onclick="toggleSidebar()">☰</button>
+        
+        </div>
+    </nav>
+    <div class="layar-penuh">
+        <header id="home">
+            <div class="overlay"></div>
+            <video autoplay muted loop>
+                <source src="gambar/dji-mini-2-cinematic-4k-video-sulawesi-tengah-indonesia-1080-ytshorts.savetube.me.mp4" type="video/mp4">
+            </video>
+            <div class="intro"> 
+                <h3><span class="tengah">Sulawesi</span> Tengah</h3><br>
+                <p>Pesona Alam, Budaya, dan Petualangan</p><br>
+                        <a href="#wisata" class="tombol">MORE INFO</a>
+                    </p>
+            </div>
+        </header>
+
+
+<section class="quote" data-aos="fade-up">
+    <div class="layar-dalam">
+        <p>Sulawesi Tengah, tanah yang penuh keindahan dan potensi.<br> Semoga terus diberkahi dengan kemakmuran dan kesuksesan<br> untuk masyarakatnya!</p>
+    </div>
+
+</section>
+
+<section class="destinasi-sulteng" data-aos="fade-up" id="wisata">
+    <div class="container" data-aos="fade-up">
+        <div class="destinasi-box">
+            <h2 style="text-align: center; font-size: 24px; margin-top: 35px;">Apa Yang Ingin Kamu Ketahui?</h2>
+            <div class="box">
+                <div class="box">
+                      <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      <img src="gambar/sambal roa.jpg" alt="unsplash.com">
+      <div class="loc">
+        <h4>Kuliner</h4>
+        <p>Makanan khas Sulawesi Tengah</p>
+        <a href="kuliner.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+      </div>
+      <div class="swiper-slide">
+      <img src="gambar/📍menara nosarara nosabatutu, middle sulawesi….jpg" alt="unsplash.com">
+      <div class="loc">
+        <h4>Destinasi Populer</h4>
+        <p>Tempat yang sedang populer di Sulawesi Tengah</p>
+        <a href="destinasi.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+      </div>
+      <div class="swiper-slide">
+      <img src="gambar/luwuk.jpeg" alt="unsplash.com">
+      <div class="loc">
+        <h4>Ibu Kota Sulawesi Tegah</h4>
+        <p>Kota Palu </p>
+        <a href="kota-palu.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+      </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+      </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+<section id="container-menu" data-aos="down" style="background-color: gray;">
+    <h2 style="text-align: center;  margin-bottom: 10px;"><span style="font-size: 24px; color: red;">Info</span> <span style="color: #fff; font-size: 24px;">Lainya</span></h2> <br>
+    <div class="container-kaca">
+        <div class="kaca" data-aos="fade-up">
+            <img src="gambar/Situs Megalitikum Taman Nasional Lore Lindu, Sulawesi Tengah.jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>About Us</h2>
+                <p>Tentang Website Ini</p>
+                <a href="aboutus.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+        <div class="kaca" data-aos="fade-down">
+            <img src="gambar/Pantai Tanjung Karang Donggala (1).jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>Galery</h2>
+                <p>Kumpulan foto foto tempat wisata di Sulawesi Tengah</p>
+                <a href="galery.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+
+        <div class="kaca" data-aos="fade-up">
+            <img src="gambar/danau-poso.jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>Budaya</h2>
+                <p>Budaya Lokal Sulawesi Tengah</p>
+                <a href="culture.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+
+        <div class="kaca" data-aos="fade-down">
+            <img src="gambar/map-sulteng.jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>Geografis</h2>
+                <p>Geografis di sulawesi tengah</p>
+                <a href="map.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+        <div class="kaca" data-aos="fade-down">
+            <img src="gambar/cocopalu.jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>Penginapan</h2>
+                <p>Tempat penginapan terbaik Di Sulawesi Tengah</p>
+                <a href="penginapan.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+        <div class="kaca" data-aos="fade-up">
+            <img src="gambar/blog1.jpg" alt="Situs Megalitikum">
+            <div class="kaca-content">
+                <h2>Blog</h2>
+                <p>Catatan Mengenai Sulawesi Tengah</p>
+                <a href="blog.html" class="btna">Read More</a>
+            </div>
+        </div> <!-- Tutup div.card -->
+
+
+
+    </div> <!-- Tutup div.card-container -->
+</section>
+
+<section id="event">
+</section>
+
+<section id="support-section"  style="background-color: rgba(0, 0, 0, 0.1);">
+    <div class="support-container" data-aos="fade-up">
+        <div class="support-box">
+            <h2>FAQ (Pertanyaan Umum)</h2>
+            <p>Temukan jawaban dari pertanyaan yang sering diajukan wisatawan.</p>
+            <button onclick="toggleFAQ()">Lihat FAQ</button>
+            <div id="faq" class="faq-content">
+                <p><strong>Bagaimana cara memesan tiket?</strong><br>Anda bisa memesan tiket melalui platform online kami.</p>
+                <p><strong>Apa saja metode pembayaran yang tersedia?</strong><br>Kami menerima pembayaran melalui kartu kredit, transfer bank, dan e-wallet.</p>
+            </div>
+        </div>
+        <div class="support-box" data-aos="fade-up">
+            <h2>Layanan Pelanggan</h2>
+            <p>Butuh bantuan lebih lanjut? Hubungi tim kami untuk mendapatkan dukungan langsung.</p>
+            <button onclick="window.location.href='#kontak'">Hubungi Kami</button>
+        </div>
+        <div class="support-box" data-aos="fade-up">
+            <h2>Keamanan & Darurat</h2>
+            <p>Nomor penting yang bisa dihubungi saat keadaan darurat.</p>
+            <ul>
+                <li>Polisi: 110</li>
+                <li>Ambulans: 118</li>
+                <li>Tim Penyelamat: 115</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+
+
+<script>
+    AOS.init();
+  </script>
+</body>
+
+<footer id="footer">
+    <div class="content">
+        <div class="main">
+            <div class="col">
+                <h4>Quick links</h4>
+                <ul class="ul-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AbouT</a></li>
+                    <li><a href="#">Penginapan</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>Recomended</h4>
+                <ul class="ul-footer">
+                    <li><a href="penginapan.html">penginapan</a></li>
+                    <li><a href="destinasi.html">Destinasi Populer</a></li>
+                    <li><a href="galery.html">Galery</a></li>
+                    <li><a href="culture.html">Budaya</a></li>
+                </ul>
+            </div>
+
+             <div class="col">
+                <h4>About Me</h4>
+                <ul class="ul-footer">
+                    <li><a href="#">Nama:M.Alghifari naula abi</a></li>
+                    <li><a href="#">Kelas:X-PPLG2</a></li>
+                    <li><a href="#">Alamat Rumah:Kp.Barunagri Desa Sukajaya</a></li>
+                    <li><a href="#">Sekolah:SMKN1CISARUA</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h4>follow us</h4>
+                <div class="social">
+                    <a href="https://www.instagram.com/algghifarri?igsh=MTA2Y215cXhkcmg1cA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Alghifarimaulaabi"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.tiktok.com/@alghhiii?_t=ZS-8vFtCiBUihk&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> <br> <hr>
+    <footer> <p style="text-align: center; color: #fff;"><small>&copy; Copyright 2025, Semua Hak Cipta Di Lindungi.</small></p>
+</footer>
+
+</html>
+
+

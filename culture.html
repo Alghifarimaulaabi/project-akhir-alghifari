@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budaya </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="bestdestinasi.css">
+
+</head>
+<body>
+      <!-- layar dalam -->
+      <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="aboutus.html">About</a></li>
+                          <li><a href="#support-section">Support</a></li>
+                          <li><a href="#kontak">Contact</a></li>
+                      </ul>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="destinasi.html">Popular</a></li>
+              <li><a href="culture.html">Budaya</a></li>
+              <li><a href="map.html">Geography</a></li>
+              <li><a href="kuliner.html">Culinary</a></li>
+              <li><a href="penginapan.html">Penginapan</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="galery.html">Gallery</a></li>
+          </ul>
+      </div>
+      <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  
+  </div>
+
+    </nav>
+    <br>
+  
+
+    <section id="budaya" class="budaya-section">
+      <div class="layar-dalam">
+          <h3>Budaya Sulawesi Tengah</h3>
+          <p class="ringkasan">Temukan keindahan dan kekayaan budaya yang ada di Sulawesi Tengah.</p>
+          <div class="budaya-container">
+              <div class="budaya-box" data-aos="fade-up">
+                  <img src="gambar/modero.jpg" alt="Tarian Tradisional">
+                  <h2>Tarian Tradisional</h2>
+                  <p>Tarian tradisional Sulawesi Tengah yang memukau dan penuh makna.</p>
+              </div>
+              <div class="budaya-box" data-aos="fade-up">
+                  <img src="gambar/lalove.jpg" alt="Alat Musik Tradisional">
+                  <h2>Alat Musik Tradisional</h2>
+                  <p>Alat musik yang digunakan dalam berbagai upacara adat dan pertunjukan.</p>
+              </div>
+              <div class="budaya-box" data-aos="fade-up">
+                  <img src="gambar/rumah tambi.jpg" alt="Budaya Lokal">
+                  <h2>Rumah Adat</h2>
+                  <p>Rumah adat Tambi adalah rumah panggung tradisional dari Sulawesi Tengah, dihuni oleh suku Kaili dan Lore. Ciri khasnya meliputi atap piramida dan tiang penyangga pendek, yang mencerminkan adaptasi terhadap lingkungan dan budaya lokal.</p>
+              </div>
+              <div class="budaya-box" data-aos="fade-up">
+                  <img src="gambar/eboni.jpg" alt="Kerajinan Tangan">
+                  <h2>Kerajinan Tangan</h2>
+                  <p>Kerajinan tangan yang mencerminkan keahlian dan kreativitas masyarakat lokal.</p>
+              </div>
+              <div class="budaya-box" data-aos="fade-up">
+                  <img src="gambar/danau-poso.jpg" alt="Festival Budaya">
+                  <h2>Festival Budaya</h2>
+                  <p>Festival yang merayakan kekayaan budaya dan tradisi Sulawesi Tengah.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          },
+        });
+      </script>
+    
+
+    <script>
+        AOS.init();
+      </script>
+    
+</body>
+
+<footer> <p><small>&copy; Copyright 2025, Semua Hak Cipta Di Lindungi.</small></p>
+
+</html>
+

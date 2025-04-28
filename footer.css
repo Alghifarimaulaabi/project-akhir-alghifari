@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    background-color: #0c0b09;
+    padding: 70px 0;
+  }
+  
+  .ul-footer {
+    list-style-type: none;
+  }
+  
+  .col {
+    width: 25%;
+    padding: 0 30PX;
+  }
+  
+  .col h4 {
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  
+  .col h4::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    left: 5px;
+    bottom: -5px;
+    background-color: #cca45d;
+  }
+  
+  .col ul li:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .col ul li a {
+    color: #9897a9;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    display: block;
+    transition: .4s;
+  }
+
+  .col ul li a:hover {
+    color: white;
+    transform: translateX(-10px);
+  }
+
+  .col .social a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #cca45d;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 12px 12px 0;
+    color: white;
+    border-radius: 50%;
+    transition: .4s;
+  }
+
+  .col .social a:hover {
+    transform: scale(1.2);
+    color: #000;
+    background-color: white;
+    rotate: 360deg;
+  }
+
+  @media (max-width: 770px) {
+    .col {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .col {
+        width: 100%;
+    }
+  }
+
+  /* ibukota */
+  .palu {
+    background-color: #252121;
+    display: flex;
+    flex-direction: column; /* Mengubah arah flex menjadi kolom untuk tampilan kecil */
+    align-items: center; /* Menyelaraskan item di tengah */
+    padding: 20px; /* Mengurangi padding untuk tampilan kecil */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.palu img {
+    height: auto; /* Mengubah tinggi menjadi otomatis untuk menjaga rasio aspek */
+    max-width: 100%; /* Membuat gambar responsif */
+}
+
+.palu h1 {
+    padding: 10px;
+    font-size: 25px;
+    margin: 0;
+    color: greenyellow;
+}
+
+.palu p, .palu ul {
+    color: #c0bdbd;
+    text-align: justify; /* Menyelaraskan teks */
+}
+
+/* Media Query untuk tampilan lebih besar */
+@media (min-width: 768px) {
+    .palu {
+        justify-content: space-between; /* Menyebar item di antara ruang */
+        padding: 40px; /* Mengembalikan padding untuk tampilan besar */
+    }
+
+    .palu img {
+        height: 400px; /* Mengatur tinggi gambar untuk tampilan besar */
+    }
+
+    .palu h1 {
+        font-size: 30px; /* Meningkatkan ukuran font untuk tampilan besar */
+    }
+}
+  /* ibu kota end */
