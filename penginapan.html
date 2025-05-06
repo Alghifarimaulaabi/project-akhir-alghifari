@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penginapan</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body class="bg-penginapan">
+  <div id="loading-screen" role="alert" aria-live="assertive" aria-busy="true">
+    <div class="spinner" aria-hidden="true"></div>
+    <div id="loading-text">Tunggu Sebentar...</div>
+  </div>
+
     <nav>
         <div class="layar-dalam">
             <div class="logo">
@@ -24,9 +31,9 @@
                         <ul>
                           <li><a href="index.html">Home</a></li>
                           <li><a href="aboutus.html">About</a></li>
-                          <li><a href="#support-section">Support</a></li>
-                          <li><a href="#kontak">Contact</a></li>
-                      </ul>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="javascript:history.back()" class="btn btn-back">Kembali</a></li> 
+                    </ul>
             </div>
         </div>
 
@@ -52,36 +59,36 @@
 
     <section id="penginapan">
         <div class="container">
-          <h2 class="judul-penginapan">Penginapan</h2>
+          <h2 class="judul-map">Penginapan</h2>
           <p style="color: #fff;">Pilihan penginapan terbaik untuk mendukung liburan Anda.</p>
           <div class="cards">
             <div class="kartu">
               <img src="gambar/cocopalu.jpg" alt="Hotel Mewah">
-              <h4>Best Western Coco Palu</h4>
+              <h4 style="color: #fff;">Best Western Coco Palu</h4>
               <p>Bintang 5, pemandangan laut, kolam renang infinity & spa.</p>
               <p><strong>Harga mulai:</strong> Rp1.500.000/malam</p>
-              <a href="#" class="btns">Lihat Detail</a>
+              <a href="penginapan1.html" class="btns">Lihat Detail</a>
             </div>
             <div class="kartu">
               <img src="gambar/torao-resort.jpg" alt="Hotel Menengah">
-              <h4>Torao Resort</h4>
+              <h4 style="color: #fff;">Torao Resort</h4>
               <p>Bintang 3, lokasi dekat pusat kota dengan sarapan gratis.</p>
               <p><strong>Harga mulai:</strong> Rp600.000/malam</p>
-              <a href="#" class="btns">Lihat Detail</a>
+              <a href="penginapan2.html" class="btns">Lihat Detail</a>
             </div>
             <div class="kartu">
               <img src="gambar/porodisa.jpg" alt="Homestay">
-              <h4>Homestay Porodisa</h4>
+              <h4 style="color: #fff;">Homestay Porodisa</h4>
               <p>Suasana lokal, lingkungan bersih dan nyaman.</p>
               <p><strong>Harga mulai:</strong> Rp250.000/malam</p>
-              <a href="#" class="btns">Lihat Detail</a>
+              <a href="penginapan3.html" class="btns">Lihat Detail</a>
             </div>
             <div class="kartu">
               <img src="gambar/lessari cotages.jpg" alt="Villa">
-              <h4>Lestari Hotel</h4>
+              <h4 style="color: #fff;">Lestari Hotel</h4>
               <p>Perbukitan hijau, private pool dan dapur lengkap.</p>
               <p><strong>Harga mulai:</strong> Rp1.200.000/malam</p>
-              <a href="#" class="btns">Lihat Detail</a>
+              <a href="penginapan4.html" class="btns">Lihat Detail</a>
             </div>
           </div>
         </div>
@@ -94,6 +101,51 @@
 <script src="script.js"></script>
 </body>
 
-<footer> <p><small>&copy; Copyright 2025, Semua Hak Cipta Di Lindungi.</small></p>
+<footer id="footer">
+  <div class="content">
+      <div class="main">
+          <div class="col">
+              <h4>Quick links</h4>
+              <ul class="ul-footer">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="aboutus.html">AbouT</a></li>
+                  <li><a href="penginapan.html">Penginapan</a></li>
+                  <li><a href="#">Support</a></li>
+              </ul>
+          </div>
+
+          <div class="col">
+              <h4>Recomended</h4>
+              <ul class="ul-footer">
+                  <li><a href="penginapan.html">penginapan</a></li>
+                  <li><a href="destinasi.html">Destinasi Populer</a></li>
+                  <li><a href="galery.html">Galery</a></li>
+                  <li><a href="culture.html">Budaya</a></li>
+              </ul>
+          </div>
+
+           <div class="col">
+              <h4>About Me</h4>
+              <ul class="ul-footer">
+                  <li><a href="#">Nama:M.Alghifari naula abi</a></li>
+                  <li><a href="#">Kelas:X-PPLG2</a></li>
+                  <li><a href="#">Alamat Rumah:Kp.Barunagri Desa Sukajaya</a></li>
+                  <li><a href="#">Sekolah:SMKN1CISARUA</a></li>
+              </ul>
+          </div>
+
+          <div class="col">
+              <h4>follow us</h4>
+              <div class="social">
+                  <a href="https://www.instagram.com/algghifarri?igsh=MTA2Y215cXhkcmg1cA=="><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://github.com/Alghifarimaulaabi"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.tiktok.com/@alghhiii?_t=ZS-8vFtCiBUihk&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href=""><i class="fa-solid fa-envelope"></i></a>
+              </div>
+          </div>
+      </div>
+  </div> <br> <hr>
+  <footer> <p style="text-align: center; color: #fff;"><small>&copy; Copyright 2025, Semua Hak Cipta Di Lindungi.</small></p>
+</footer>
 
 </html>

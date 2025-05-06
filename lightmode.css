@@ -1,0 +1,19 @@
+body {
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: #000;
+  }
+
+button {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+

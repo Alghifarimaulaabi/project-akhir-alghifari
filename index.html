@@ -15,6 +15,11 @@
 
 </head>
 <body>
+    <div id="loading-screen" role="alert" aria-live="assertive" aria-busy="true">
+        <div class="spinner" aria-hidden="true"></div>
+        <div id="loading-text">Tunggu Sebentar...</div>
+      </div>
+
     <!-- layar dalam -->
     <nav>
         <div class="layar-dalam">
@@ -74,28 +79,30 @@
         </header>
 
 
-<section class="quote" data-aos="fade-up">
-    <div class="layar-dalam">
-        <p>Sulawesi Tengah, tanah yang penuh keindahan dan potensi.<br> Semoga terus diberkahi dengan kemakmuran dan kesuksesan<br> untuk masyarakatnya!</p>
-    </div>
 
-</section>
-
-<section class="destinasi-sulteng" data-aos="fade-up" id="wisata">
+<section class="destinasi-sulteng" data-aos="fade-up" id="wisata" style="background-color: #050505;">
     <div class="container" data-aos="fade-up">
         <div class="destinasi-box">
-            <h2 style="text-align: center; font-size: 24px; margin-top: 35px;">Apa Yang Ingin Kamu Ketahui?</h2>
+            <h2 style="text-align: center; margin-top: 35px;"><span style="color: #fca311; font-size: 24px   ;">Apa Yang Ingin</span> <span style="color: #fff; font-size: 24px;">Kamu Ketahui?</span></h2>
             <div class="box">
                 <div class="box">
                       <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="gambar/luwuk.jpeg" alt="unsplash.com">
+            <div class="loc">
+              <h4>Ibu Kota Sulawesi Tegah</h4>
+              <p>Kota Palu </p>
+              <a href="kota-palu.html"  class="tmbl"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+          </div>
+            </div>     
       <div class="swiper-slide">
       <img src="gambar/sambal roa.jpg" alt="unsplash.com">
       <div class="loc">
         <h4>Kuliner</h4>
         <p>Makanan khas Sulawesi Tengah</p>
-        <a href="kuliner.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="kuliner.html" class="tmbl"><button class="tmbl">Lihat Detail</i></button></a>
     </div>
       </div>
       <div class="swiper-slide">
@@ -103,15 +110,7 @@
       <div class="loc">
         <h4>Destinasi Populer</h4>
         <p>Tempat yang sedang populer di Sulawesi Tengah</p>
-        <a href="destinasi.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
-    </div>
-      </div>
-      <div class="swiper-slide">
-      <img src="gambar/luwuk.jpeg" alt="unsplash.com">
-      <div class="loc">
-        <h4>Ibu Kota Sulawesi Tegah</h4>
-        <p>Kota Palu </p>
-        <a href="kota-palu.html"><button class="tmbl">Lihat Detail<i class="fa-solid fa-arrow-right"></i></button></a>
+        <a href="destinasi.html" class="tmbl"><button class="tmbl">Lihat Detail</i></button></a>
     </div>
       </div>
       </div>
@@ -128,8 +127,8 @@
 
 
 
-<section id="container-menu" data-aos="down" style="background-color: gray;">
-    <h2 style="text-align: center;  margin-bottom: 10px;"><span style="font-size: 24px; color: red;">Info</span> <span style="color: #fff; font-size: 24px;">Lainya</span></h2> <br>
+<section id="container-menu" data-aos="down" style="background-color: #20212b">
+    <h2 style="text-align: center;  margin-bottom: 10px; padding-top: 20px;"><span style="font-size: 24px; color: #fff;">Info</span> <span style="color: #fca311; font-size: 24px;">Lainya</span></h2> <br>
     <div class="container-kaca">
         <div class="kaca" data-aos="fade-up">
             <img src="gambar/Situs Megalitikum Taman Nasional Lore Lindu, Sulawesi Tengah.jpg" alt="Situs Megalitikum">
@@ -192,10 +191,17 @@
     </div> <!-- Tutup div.card-container -->
 </section>
 
-<section id="event">
+<section id="map" style="background-color: #fca311;">
+    <h1 class="judul-sulteng">Map Sulawesi tengah</h1>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4084784.9047521106!2d119.17141495770655!3d-1.126086615907888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8809c9659a2d3d%3A0x436e33fd8cdb6299!2sSulawesi%20Tengah!5e0!3m2!1sid!2sid!4v1740672628080!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </section>
 
-<section id="support-section"  style="background-color: rgba(0, 0, 0, 0.1);">
+
+
+
+<section id="support-section"  style="background-color: #000;">
     <div class="support-container" data-aos="fade-up">
         <div class="support-box">
             <h2>FAQ (Pertanyaan Umum)</h2>
@@ -233,6 +239,10 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -263,8 +273,8 @@
                 <h4>Quick links</h4>
                 <ul class="ul-footer">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">AbouT</a></li>
-                    <li><a href="#">Penginapan</a></li>
+                    <li><a href="aboutus.html">AbouT</a></li>
+                    <li><a href="penginapan.html">Penginapan</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
             </div>

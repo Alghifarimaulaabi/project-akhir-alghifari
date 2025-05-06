@@ -8,10 +8,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="lightmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
-<body class="abotus">
+<body>
+    <div id="loading-screen" role="alert" aria-live="assertive" aria-busy="true">
+        <div class="spinner" aria-hidden="true"></div>
+        <div id="loading-text">Tunggu Sebentar...</div>
+      </div>
+
     <nav>
         <div class="layar-dalam">
             <div class="logo">
@@ -27,9 +33,8 @@
                 </a>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="#support-section">Support</a></li>
-                            <li><a href="#kontak">Contact</a></li>
+                            <li><a href="#aboutus">About</a></li>
+                            <li><a href="#footer">Contact</a></li>
                             <li><a href="javascript:history.back()" class="btn btn-back">Kembali</a></li> 
                         </ul>
             </div>
@@ -55,11 +60,11 @@
 
 
 
-    </nav> <br> <br>
+    </nav> <br> <br> <br>
 
     <section id="aboutus">
         <div class="layar-dalam">
-            <h3 style="color: #fff; margin-top: 30px;">About Us</h3>
+            <h3 class="judul-map">About Us</h3>
             <p class="ringkasan">Selamat datang di Website Pariwisata Alghi</p>
             <div class="konten-isi">
                 <p>
@@ -69,21 +74,17 @@
                 </p>
             </div>
         </div>
-        <div class="aboutus-img">
-            <img src="gambar/sombori island.jpg" alt="pulau sombori" data-aos="fade-up">
-            <p style="text-align: center; color: #fff;">Pulau Sombori Sulawesi Tengah</p>
+        <div class="lainya">
+            <a href="destinasi.html"><img src="gambar/Pantai Tanjung Karang Donggala.jpg" alt=""></a>
+            <p class="des-about">Destinasi Populer di sulawesi tengah</p>
         </div>
-        <div class="aboutus-img">
-            <img src="gambar/Ayam-bambu.jpg" alt="kuliner" data-aos="fade-up">
-            <p style="text-align: center; color: #fff;">Ayam Bambu</p>
+        <div class="lainya">
+           <a href="kuliner.html"><img src="gambar/sambal roa.jpg" alt=""></a>
+            <p class="des-about">Makanan khas sulawesi tengah</p>
         </div>
-        <div class="aboutus-img">
-            <img src="gambar/modero.jpg" alt="budaya" data-aos="fade-up">
-            <p style="text-align: center; color: #fff;">Tarian Modero</p>
-        </div>
-        <div class="aboutus-img">
-            <img src="gambar/porodisa.jpg" alt="Penginapan" data-aos="fade-up">
-            <p style="text-align: center; color: #fff;">Homestay Porodisa</p>
+        <div class="lainya">
+            <a href="penginapan.html"><img src="gambar/cocopalu.jpg" alt=""></a>
+            <p class="des-about">Penginapan terbaik di sulawesi tengah</p>
         </div>
     </section>
 
@@ -105,10 +106,10 @@
             <div class="col">
                 <h4>Quick links</h4>
                 <ul class="ul-footer">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">AbouT</a></li>
-                    <li><a href="#">Penginapan</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="penginapan.html">Penginapan</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
 
@@ -125,10 +126,10 @@
              <div class="col">
                 <h4>About Me</h4>
                 <ul class="ul-footer">
-                    <li><a href="#">Nama</a></li>
-                    <li><a href="#">Kelas</a></li>
-                    <li><a href="#">Alamat Rumah</a></li>
-                    <li><a href="#">Sekolah</a></li>
+                    <li><a href="#">Nama:M.Alghifari naula abi</a></li>
+                    <li><a href="#">Kelas:X-PPLG2</a></li>
+                    <li><a href="#">Alamat Rumah:Kp.Barunagri Desa Sukajaya</a></li>
+                    <li><a href="#">Sekolah:SMKN1CISARUA</a></li>
                 </ul>
             </div>
 
@@ -144,7 +145,6 @@
         </div>
     </div> <br> <hr>
     <footer> <p style="text-align: center; color: #fff;"><small>&copy; Copyright 2025, Semua Hak Cipta Di Lindungi.</small></p>
-
 </footer>
 
 </html>

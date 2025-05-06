@@ -1,3 +1,21 @@
+  // Simulate async loading like fetching data, etc.
+  document.addEventListener('DOMContentLoaded', () => {
+    // After delay, hide loading and show main content
+    setTimeout(() => {
+      const loadingScreen = document.getElementById('loading-screen');
+      const mainContent = document.getElementById('main-content');
+      loadingScreen.style.opacity = '0';
+      loadingScreen.style.transition = 'opacity 0.7s ease';
+      // After fade out, hide loading and show main content
+      loadingScreen.addEventListener('transitionend', () => {
+        loadingScreen.style.display = 'none';
+        mainContent.style.display = 'block';
+        mainContent.focus();
+      }, { once: true });
+    }, 3000);
+  });
+
+
 //menu
 var tombolMenu = $(".tombol-menu");
 var menu = $("nav .menu ul");
@@ -80,3 +98,7 @@ function nextSlide() {
 
 setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
 showSlide(currentIndex);
+
+function setLightMode() {
+    document.body.classList.toggle('light-mode');
+  }

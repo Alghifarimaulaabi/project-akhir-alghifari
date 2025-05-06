@@ -142,3 +142,68 @@
     }
 }
   /* ibu kota end */
+
+  .map-coco {
+    display: flex; 
+    justify-content: center;
+    margin: 30px 0; 
+    border-width: 15px;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.map-coco iframe {
+    width: 1050px; 
+    height: 500px; 
+    border: 0; 
+    border-width: 90%;
+    border-radius: 10px;
+}
+  .map-pusatlaut {
+    display: flex; 
+    justify-content: center;
+    margin: 30px 0; 
+    border-width: 15px;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.map-pusatlaut iframe {
+    width: 1050px; 
+    height: 500px; 
+    border: 0; 
+    border-width: 90%;
+    border-radius: 10px;
+}
+  .map-lore {
+    display: flex; 
+    justify-content: center;
+    margin: 30px 0; 
+    border-width: 15px;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.map-lore iframe {
+    width: 1050px; 
+    height: 500px; 
+    border: 0; 
+    border-width: 90%;
+    border-radius: 10px;
+}
+  .map-nosarara {
+    display: flex; 
+    justify-content: center;
+    margin: 30px 0; 
+    border-width: 15px;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.map-nosarara iframe {
+    width: 1050px; 
+    height: 500px; 
+    border: 0; 
+    border-width: 90%;
+    border-radius: 10px;
+}
