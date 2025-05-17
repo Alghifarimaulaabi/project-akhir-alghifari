@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+        <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="javascript:history.back()" class="btn btn-back">Kembali</a></li> 
+                        </ul>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="pemesanan.html">Pemesanan</a></li>
+                            <li><a href="#contactForm">Contact</a></li>
+            </ul>
+        </div>
+        <button class="open-btn" onclick="toggleSidebar()">☰</button>
+
+    </nav> <br> <br> <br>
+
+    <div id="loading-screen" role="alert" aria-live="assertive" aria-busy="true">
+        <div class="spinner" aria-hidden="true"></div>
+        <div id="loading-text">Tunggu Sebentar...</div>
+      </div>
+
+
+      <main class="container-contact" role="main" aria-label="Contact form and social media contacts">
+    <h1>Get in Touch</h1>
+    <form id="contactForm" novalidate>
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" name="name" placeholder="Your name" minlength="2" required aria-required="true" />
+
+      <label for="emailInput">Email</label>
+      <input type="email" id="emailInput" name="email" placeholder="example@mail.com" required aria-required="true" />
+
+      <label for="messageInput">Message</label>
+      <textarea id="messageInput" name="message" placeholder="Write your message here..." minlength="10" required aria-required="true"></textarea>
+
+      <button type="submit" aria-label="Send message">Send Message</button>
+      <div class="success-message" id="successMsg" role="alert">Thanks! Your message was sent.</div>
+    </form>
+
+    <section class="contact-methods" aria-label="Social media and email contact methods">
+      <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener" class="contact-method" aria-label="Instagram Profile">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5A3.75 3.75 0 0020 16.25v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm4.5-.5a1 1 0 110 2 1 1 0 010-2z"/>
+        </svg>
+        Instagram
+      </a>
+      <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="contact-method" aria-label="WhatsApp Chat">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.52 3.48A11.954 11.954 0 005.51 18.2l-1.09 3.99 4.1-1.1a11.948 11.948 0 0012-17.6zm-5.52 12.34c-.25.7-1.48 1.33-2.05 1.41a3.54 3.54 0 01-2.12-.64c-.43-.27-1.14-.98-1.48-1.64-.37-.74-.8-2.07-.8-2.07s.53-.04.81-.05c.28-.01.58.15.88.32.3.17.42.3.67.53.25.23 1.03 1.04 1.18 1.21.15.17.27.3.46.57.19.27.03.52-.09.73-.12.21-.82.98-1.11 1.18-.3.2-.53.22-.98-.03-.45-.25-2.03-1.03-2.76-3.24-.26-.74.01-1.44.36-1.87.37-.45 1.01-.87 1.36-1.06.38-.2.71-.23 1.07-.02a4.53 4.53 0 011.62 1.59 5.2 5.2 0 01.72 2.01c.03.17-.02.43-.07.59z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href="mailto:youremail@example.com" class="contact-method" aria-label="Send email">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18v-8l8 7 8-7v8H4z"/>
+        </svg>
+        Gmail
+      </a>
+    </section>
+  </main>
+
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
+</body>
+
+
+</html>
+

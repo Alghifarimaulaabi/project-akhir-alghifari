@@ -102,3 +102,142 @@ showSlide(currentIndex);
 function setLightMode() {
     document.body.classList.toggle('light-mode');
   }
+
+  //pemesanan
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('travelForm');
+    const steps = document.querySelectorAll('.form-step');
+    const prevBtns = document.querySelectorAll('.prev-btn');
+    const nextBtns = document.querySelectorAll('.next-btn');
+    const packageCards = document.querySelectorAll('.package-card');
+    const packageSelectBtns = document.querySelectorAll('.select-btn');
+    
+    let currentStep = 1;
+    let selectedPackage = {
+        name: 'Bali Explorer',
+        price: 'Rp 3.500.000'
+    };
+
+    // Initialize form
+    showStep(currentStep);
+
+    // Package selection
+    packageCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Remove selected class from all cards
+            packageCards.forEach(c => c.classList.remove('selected'));
+            
+            // Add selected class to clicked card
+            this.classList.add('selected');
+            
+            // Update select button text
+            const selectBtn = this.querySelector('.select-btn');
+            packageSelectBtns.forEach(btn => {
+                btn.textContent = 'Pilih';
+                btn.style.backgroundColor = 'white';
+                btn.style.color = 'var(--primary)';
+                btn.style.border = '1px solid var(--primary)';
+            });
+            
+            selectBtn.textContent = 'Dipilih';
+            selectBtn.style.backgroundColor = 'var(--primary)';
+            selectBtn.style.color = 'white';
+            selectBtn.style.border = 'none';
+            
+            // Update selected package
+            const packageName = this.querySelector('h3').textContent;
+            const packagePrice = this.querySelector('.price').textContent;
+            selectedPackage = {
+                name: packageName,
+                price: packagePrice
+            };
+        });
+    });
+
+    // Next button click
+    nextBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            if (validateStep(currentStep)) {
+                currentStep++;
+                showStep(currentStep);
+                updateStepIndicator(currentStep);
+            }
+        });
+    });
+
+    // Previous button click
+    prevBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            currentStep--;
+            showStep(currentStep);
+            updateStepIndicator(currentStep);
+        });
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateStep(currentStep)) {
+            // Update summary
+            document.getElementById('summary-package').textContent = selectedPackage.name;
+            document.getElementById('summary-date').textContent = document.getElementById('travelDate').value;
+            document.getElementById('summary-participants').textContent = document.getElementById('participants').value + ' Orang';
+            document.getElementById('summary-total').textContent = selectedPackage.price;
+            
+            currentStep++;
+            showStep(currentStep);
+            updateStepIndicator(currentStep);
+        }
+    });
+
+    // Show current step
+    function showStep(step) {
+        steps.forEach(stepElement => {
+            stepElement.classList.remove('active');
+            if (parseInt(stepElement.dataset.step) === step) {
+                stepElement.classList.add('active');
+            }
+        });
+    }
+
+    // Update step indicator
+    function updateStepIndicator(step) {
+        document.querySelectorAll('.step').forEach((stepElement, index) => {
+            if (index + 1 < step) {
+                stepElement.classList.add('completed');
+                stepElement.classList.remove('active');
+            } else if (index + 1 === step) {
+                stepElement.classList.add('active');
+                stepElement.classList.remove('completed');
+            } else {
+                stepElement.classList.remove('active', 'completed');
+            }
+        });
+    }
+
+    // Validate current step
+    function validateStep(step) {
+        let isValid = true;
+        
+        if (step === 1) {
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            
+            if (!fullName || !email || !phone) {
+                isValid = false;
+                alert('Harap lengkapi semua informasi pribadi');
+            }
+        } else if (step === 3) {
+            const travelDate = document.getElementById('travelDate').value;
+            
+            if (!travelDate) {
+                isValid = false;
+                alert('Harap pilih tanggal keberangkatan');
+            }
+        }
+        
+        return isValid;
+    }
+});

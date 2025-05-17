@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Wisata - Konsep Modern</title>
+    <link rel="stylesheet" href="pemesanan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="loading-screen" role="alert" aria-live="assertive" aria-busy="true">
+        <div class="spinner" aria-hidden="true"></div>
+        <div id="loading-text">Tunggu Sebentar...</div>
+        </div>
+        <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="gambar/logo-white.png" class="putih"></a>
+                <a href=""><img src="gambar/logo-black.png" class="hitam"></a>
+            </div>
+            <!-- Menu -->
+
+
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="pemesanan.html">Pemesanan</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+                <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="pemesanan.html">Pemesanan</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <button class="open-btn" onclick="toggleSidebar()">☰</button>
+        
+        </div>
+    </nav>
+
+    <div class="booking-container">
+        <div class="booking-hero">
+            <div class="hero-content">
+                <h1>Jelajahi Pesona Sulawesi Tengah</h1>
+                <p>Pesan paket wisata pilihan Anda dalam 3 langkah sederhana</p>
+                <div class="steps">
+                    <div class="step active">
+                        <span>1</span>
+                        <p>Isi Data</p>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <p>Pilih Paket</p>
+                    </div>
+                    <div class="step">
+                        <span>3</span>
+                        <p>Konfirmasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <form id="travelForm">
+                <!-- Step 1: Data Pribadi -->
+                <div class="form-step active" data-step="1">
+                    <h2>Informasi Pribadi</h2>
+                    <div class="input-group">
+                        <label for="fullName">Nama Lengkap</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Nomor HP</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="next-btn">Lanjut <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Pilih Paket -->
+                <div class="form-step" data-step="2">
+                    <h2>Pilih Paket Wisata</h2>
+                    <div class="package-options">
+                        <div class="package-card selected">
+                            <div class="package-header">
+                                <h3>Menara Nosarara</h3>
+                                <span class="price">Rp 3.500.000</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 5 Hari 4 Malam</li>
+                                <li><i class="fas fa-check"></i> Hotel Bintang 4</li>
+                                <li><i class="fas fa-check"></i> Tur Privat</li>
+                                <li><i class="fas fa-check"></i> Makan 3x Sehari</li>
+                            </ul>
+                            <img src="gambar/📍menara nosarara nosabatutu, middle sulawesi….jpg" alt="" class="img-package">
+                            <button type="button" class="select-btn">Dipilih</button>
+                        </div>
+
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3>Pusat Laut Dongala</h3>
+                                <span class="price">Rp 2.800.000</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 4 Hari 3 Malam</li>
+                                <li><i class="fas fa-check"></i> Hotel Bintang 3</li>
+                                <li><i class="fas fa-check"></i> Tur Grup</li>
+                                <li><i class="fas fa-check"></i> Makan 2x Sehari</li>
+                            </ul>
+                              <img src="gambar/Pusat laut.jpg" alt="" class="img-package">
+                            <button type="button" class="select-btn">Pilih</button>
+                        </div>
+
+                         <div class="package-card">
+                            <div class="package-header">
+                                <h3>Taman Nasional Lore Lindu</h3>
+                                <span class="price">Rp 800.000</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Hotel Bintang 3</li>
+                                <li><i class="fas fa-check"></i> Tur Grup</li>
+                                <li><i class="fas fa-check"></i> Makan 1 hari 3 kali</li>
+                            </ul>
+                             <img src="gambar/Situs Megalitikum Taman Nasional Lore Lindu, Sulawesi Tengah.jpg" alt="" class="img-package">
+                            <button type="button" class="select-btn">Pilih</button>
+                        </div>
+
+                         <div class="package-card">
+                            <div class="package-header">
+                                <h3>Kota Tua Donggala</h3>
+                                <span class="price">Rp 1.999.000</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Hotel Bintang 4</li>
+                                <li><i class="fas fa-check"></i> Tur Grup</li>
+                                <li><i class="fas fa-check"></i> Dilengkapi transportasi</li>
+                            </ul>
+                             <img src="gambar/kota tua dongala.jpg" alt="" class="img-package">
+                            <button type="button" class="select-btn">Pilih</button>
+                        </div>
+
+
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3>Pantai Tanjung Karang</h3>
+                                <span class="price">Rp 7.200.000</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 7 Hari 6 Malam</li>
+                                <li><i class="fas fa-check"></i> Resort Pantai</li>
+                                <li><i class="fas fa-check"></i> transportasi perahu gratis</li>
+                                <li><i class="fas fa-check"></i> Full Board Meal</li>
+                            </ul>
+                            <img src="gambar/Pantai Tanjung Karang Donggala (1).jpg" alt="" class="img-package">
+                            <button type="button" class="select-btn">Pilih</button>
+                        </div>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Kembali</button>
+                        <button type="button" class="next-btn">Lanjut <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Detail Perjalanan -->
+                <div class="form-step" data-step="3">
+                    <h2>Detail Perjalanan</h2>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="travelDate">Tanggal Keberangkatan</label>
+                            <input type="date" id="travelDate" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="participants">Jumlah Peserta</label>
+                            <select id="participants" required>
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5+">5+ Orang (Group)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="specialRequests">Permintaan Khusus</label>
+                        <textarea id="specialRequests" rows="3" placeholder="Misal: Kamar twin bed, makanan vegetarian, dll."></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="prev-btn"><i class="fas fa-arrow-left"></i> Kembali</button>
+                        <button type="submit" class="submit-btn">Pesan Sekarang <i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <!-- Konfirmasi -->
+                <div class="form-step" data-step="4">
+                    <div class="confirmation">
+                        <div class="confirmation-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h2>Pemesanan Berhasil!</h2>
+                        <p class="confirmation-message">Terima kasih telah memesan paket wisata dengan kami. Detail pemesanan telah dikirim ke email Anda.</p>
+                        <div class="booking-summary">
+                            <h3>Ringkasan Pemesanan</h3>
+                            <div class="summary-item">
+                                <span>Paket:</span>
+                                <span id="summary-package">Bali Explorer</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Tanggal:</span>
+                                <span id="summary-date">-</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Peserta:</span>
+                                <span id="summary-participants">-</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total:</span>
+                                <span id="summary-total">Rp 3.500.000</span>
+                            </div>
+                        </div>
+                       <a href="index.html"><button type="button" class="home-btn">Kembali ke Beranda</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('travelForm');
+    const steps = document.querySelectorAll('.form-step');
+    const prevBtns = document.querySelectorAll('.prev-btn');
+    const nextBtns = document.querySelectorAll('.next-btn');
+    const packageCards = document.querySelectorAll('.package-card');
+    const packageSelectBtns = document.querySelectorAll('.select-btn');
+    
+    let currentStep = 1;
+    let selectedPackage = {
+        name: 'Bali Explorer',
+        price: 'Rp 3.500.000'
+    };
+
+    // Initialize form
+    showStep(currentStep);
+
+    // Package selection
+    packageCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Remove selected class from all cards
+            packageCards.forEach(c => c.classList.remove('selected'));
+            
+            // Add selected class to clicked card
+            this.classList.add('selected');
+            
+            // Update select button text
+            const selectBtn = this.querySelector('.select-btn');
+            packageSelectBtns.forEach(btn => {
+                btn.textContent = 'Pilih';
+                btn.style.backgroundColor = 'white';
+                btn.style.color = 'var(--primary)';
+                btn.style.border = '1px solid var(--primary)';
+            });
+            
+            selectBtn.textContent = 'Dipilih';
+            selectBtn.style.backgroundColor = 'var(--primary)';
+            selectBtn.style.color = 'white';
+            selectBtn.style.border = 'none';
+            
+            // Update selected package
+            const packageName = this.querySelector('h3').textContent;
+            const packagePrice = this.querySelector('.price').textContent;
+            selectedPackage = {
+                name: packageName,
+                price: packagePrice
+            };
+        });
+    });
+
+    // Next button click
+    nextBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            if (validateStep(currentStep)) {
+                currentStep++;
+                showStep(currentStep);
+                updateStepIndicator(currentStep);
+            }
+        });
+    });
+
+    // Previous button click
+    prevBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            currentStep--;
+            showStep(currentStep);
+            updateStepIndicator(currentStep);
+        });
+    });
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateStep(currentStep)) {
+            // Update summary
+            document.getElementById('summary-package').textContent = selectedPackage.name;
+            document.getElementById('summary-date').textContent = document.getElementById('travelDate').value;
+            document.getElementById('summary-participants').textContent = document.getElementById('participants').value + ' Orang';
+            document.getElementById('summary-total').textContent = selectedPackage.price;
+            
+            currentStep++;
+            showStep(currentStep);
+            updateStepIndicator(currentStep);
+        }
+    });
+
+    // Show current step
+    function showStep(step) {
+        steps.forEach(stepElement => {
+            stepElement.classList.remove('active');
+            if (parseInt(stepElement.dataset.step) === step) {
+                stepElement.classList.add('active');
+            }
+        });
+    }
+
+    // Update step indicator
+    function updateStepIndicator(step) {
+        document.querySelectorAll('.step').forEach((stepElement, index) => {
+            if (index + 1 < step) {
+                stepElement.classList.add('completed');
+                stepElement.classList.remove('active');
+            } else if (index + 1 === step) {
+                stepElement.classList.add('active');
+                stepElement.classList.remove('completed');
+            } else {
+                stepElement.classList.remove('active', 'completed');
+            }
+        });
+    }
+
+    // Validate current step
+    function validateStep(step) {
+        let isValid = true;
+        
+        if (step === 1) {
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            
+            if (!fullName || !email || !phone) {
+                isValid = false;
+                alert('Harap lengkapi semua informasi pribadi');
+            }
+        } else if (step === 3) {
+            const travelDate = document.getElementById('travelDate').value;
+            
+            if (!travelDate) {
+                isValid = false;
+                alert('Harap pilih tanggal keberangkatan');
+            }
+        }
+        
+        return isValid;
+    }
+});
+    </script>
+</body>
+</html>
